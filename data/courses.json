@@ -1,0 +1,32 @@
+{
+  "courses": [
+    {
+      "title": "ISS 240: Web-Based Multimedia Communications",
+      "website": "/archive/web_comm",
+      "shortname": "ISS 240",
+      "syllabus": "http://www.example.com",
+      "description": "Introduction to HTML/CSS and JS for web development."
+    },
+    {
+      "title": "ISS 241: Web Project Design and Development",
+      "website": "/archive/web_project",
+      "shortname": "ISS 241",
+      "syllabus": "/files/ISS241_WebProjectDesignSyllabus.pdf",
+      "description": "Continuing web development with JavaScript, Node.js, and full-stack development."
+    },
+    {
+      "title": "VMS 328 / ISS 214 / Lit 317: Media Theory",
+      "website": "/files/MJS_ArtistAsMediaTheorist_WORKINGSyllabus_2019.pdf",
+      "shortname": "VMS 328",
+      "syllabus": "/files/MJS_ArtistAsMediaTheorist_WORKINGSyllabus_2019.pdf",
+      "description": "Introduction to the core concepts of media theory with special attention to artists writing on media, medium, and mediation."
+    },
+    {
+      "title": "VMS 202D: Introduction to Visual Culture",
+      "website": "/files/VMS202D_Syllabus.pdf",
+      "shortname": "VMS 202D",
+      "syllabus": "/files/VMS202D_Syllabus.pdf",
+      "description": "Introduction to the core concepts of visual culture with a special emphasis on new media and current events."
+    }
+  ]
+}

@@ -1,0 +1,339 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-weight: 100;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  color: #393946;
+  font-family: "Karla", sans-serif;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+a {
+  color: #393946;
+}
+.btn {
+  white-space: normal;
+}
+
+.jumbotron {
+  padding: 20px 0;
+  border-radius: 0%;
+  text-align: center;
+  background-color: #ffffff;
+  margin-bottom: 0.5em;
+}
+
+.header-container i {
+  letter-spacing: 1em;
+}
+
+a.navicons:hover {
+  border-bottom: none;
+}
+
+.container {
+  padding-top: 1rem;
+}
+
+.bio {
+  padding: 1.2rem 2rem;
+}
+
+@media (max-width: 768px) {
+  .bio {
+    padding: 1.2rem 1.2rem;
+  }
+  .container {
+    padding: 0.8rem 0.6rem;
+  }
+}
+
+.bio img {
+  width: 248px;
+  height: auto;
+  margin: 1.6em 1.6em 1.2em 0;
+}
+@media (max-width: 768px) {
+  .bio img {
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-bottom: 1rem;
+  }
+}
+.bio p {
+  line-height: 1.8;
+  text-align: justify;
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+  .bio p {
+    text-align: left;
+    font-size: 14px;
+  }
+}
+.bio p a {
+  font-weight: 600;
+  border-bottom: 3px solid #055d80;
+}
+.bio p a:hover {
+  text-decoration: none;
+  border-bottom: 4px solid #007bff;
+}
+
+.maincontent {
+  line-height: 160%;
+  margin: 1 auto;
+}
+
+.work {
+  position: relative;
+  max-width: 240px;
+  margin: 16px;
+}
+
+.work img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.img-overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 20px;
+  text-align: center;
+}
+.work:hover .img-overlay {
+  opacity: 1;
+}
+.items {
+  width: 100%;
+}
+
+.item-card {
+  margin: 1.2rem;
+}
+
+/* Item Card Images */
+
+.card-header {
+  min-height: 160px;
+  width: auto;
+}
+
+.card-header button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  max-width: 260px;
+}
+
+.card-header .btn-link {
+  color: #055d80;
+}
+@media (max-width: 768px) {
+  .card-header button {
+    background-color: rgba(199, 199, 199, 0.85);
+    border: 1px solid rgba(199, 199, 199);
+    position: inherit;
+    margin: 1rem auto;
+  }
+  .card-images {
+    max-width: 80%;
+    margin: auto;
+  }
+}
+
+.s-1 {
+  background-image: url(../images/projects/S-1_CardHeader.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.MOOC {
+  background-image: url(../images/projects/MOOC_CardHeader.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.medieval {
+  background-image: url(../images/projects/Apostles_CardHeader.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.last-pictures {
+  background-image: url(../images/projects/Paglen_LastPictures-CardHeader.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.data-determ {
+  background-image: url(../images/projects/DataDeterm_CardHeader.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.incomputable {
+  background-image: url(../images/projects/incomputable_CardHeader.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.queerxscape {
+  background-image: url(../images/projects/queerXscape_CardHeader.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.webProj {
+  background-image: url(../images/projects/241_WebProj_CardHeader.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.webMedia {
+  background-image: url(../images/projects/240_webMedia_CardHeader.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.mTheory {
+  background-image: url(../images/projects/mtheory_CardHeader.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.vis-stud {
+  background-image: url(../images/projects/visCulture_cardHeader.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+@media (max-width: 768px) {
+  .vis-stud,
+  .mTheory,
+  .webMedia,
+  .webProj,
+  .queerxscape,
+  .incomputable,
+  .data-determ,
+  .last-pictures,
+  .medieval,
+  .MOOC,
+  .s-1 {
+    background-position: center;
+  }
+}
+
+.item-card-text {
+  word-wrap: break-word;
+  font-family: "Karla", sans-serif;
+  font-weight: 600;
+}
+
+.card-body {
+  padding-bottom: 6rem;
+}
+
+.card-body p {
+  text-align: left;
+  line-height: 1.8rem;
+  padding: 5px 15px;
+}
+
+.card-body ul {
+  text-align: left;
+}
+
+.card-body a {
+  border-bottom: 3px solid #055d80;
+}
+
+.card-body a:hover {
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 4px solid #055d80;
+}
+
+.card-body button a {
+  color: #055d80;
+  border-bottom: none;
+}
+.card-body button a:hover {
+  color: #fff;
+  border-bottom: none;
+}
+
+.card-body .btn {
+  margin: 1px;
+}
+
+.item-card .btn-link:hover {
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  background-color: #055d80;
+}
+
+.item-card .btn-link:focus {
+  text-decoration: none;
+}
+
+.footer {
+  height: 60px;
+  margin-top: 1.6em;
+  width: 100%;
+  line-height: 60px;
+  bottom: 0;
+}
+@media (max-width: 768px) {
+  .footer {
+    position: relative;
+  }
+}
+/*CSS for static site*/
+#projects,
+#portfolio,
+#courses {
+  display: none;
+}

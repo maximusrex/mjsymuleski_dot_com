@@ -1,0 +1,180 @@
+{
+  "portfolio": [
+    {
+      "title": "Swimming Hole",
+      "year": "2021",
+      "shortname": "swimming_hole_2021",
+      "description": "<p>2021, collage on paper</p>",
+      "thumb": "swimming_hole_2021_tn.jpg",
+      "image": "swimming_hole_2021.jpg"
+    },
+    {
+      "title": "Spectator Sports",
+      "year": "2021",
+      "shortname": "spectator_sports_2021",
+      "description": "<p>2021, collage on paper</p>",
+      "thumb": "spectator_sports_2021_tn.jpg",
+      "image": "spectator_sports_2021.jpg"
+    },
+    {
+      "title": "Twinsies, V2",
+      "year": "2021",
+      "shortname": "twinsies_v2_2021",
+      "description": "<p>2021, collage on paper</p>",
+      "thumb": "twinsies_v2_2021_tn.jpg",
+      "image": "twinsies_v2_2021.jpg"
+    },
+    {
+      "title": "New Vistas",
+      "year": "2020",
+      "shortname": "new_vistas_2020",
+      "description": "<p>2020, collage on paper</p>",
+      "thumb": "new_vistas_2020_tn.jpg",
+      "image": "new_vistas_2020.jpg"
+    },
+    {
+      "title": "Triptych",
+      "year": "2019",
+      "shortname": "triptych",
+      "description": "<p>2019, collage on paper</p>",
+      "thumb": "triptych_tn.jpg",
+      "image": "triptych.jpg"
+    },
+    {
+      "title": "Vices",
+      "year": "2019",
+      "shortname": "vices_2019",
+      "description": "<p>2019, collage on paper</p>",
+      "thumb": "vices_2019_tn.jpg",
+      "image": "vices_2019.jpg"
+    },
+    {
+      "title": "Rorsarch",
+      "year": "2019",
+      "shortname": "rorsarch_2019",
+      "description": "<p>2019, collage on paper</p>",
+      "thumb": "rorsarch_2019_tn.jpg",
+      "image": "rorsarch_2019.jpg"
+    },
+    {
+      "title": "Coverup",
+      "year": "2019",
+      "shortname": "coverup_2019",
+      "description": "<p>2019, collage on paper</p>",
+      "thumb": "coverup_2019_tn.jpg",
+      "image": "coverup_2019.jpg"
+    },
+    {
+      "title": "Shitgardens",
+      "year": "2019",
+      "shortname": "shitgardens_2019",
+      "description": "<p>2019, collage on paper</p>",
+      "thumb": "shitgardens_2019_tn.jpg",
+      "image": "shitgardens_2919.jpg"
+    },
+    {
+      "title": "Liliths Brood",
+      "year": "2019",
+      "shortname": "liliths_brood",
+      "description": "<p>2019, collage on paper (For Suz Baumann)</p>",
+      "thumb": "liliths_brood_tn.jpg",
+      "image": "liliths_brood.jpg"
+    },
+    {
+      "title": "Beach Day",
+      "year": "beach_day_2018",
+      "shortname": "beach_day_2018",
+      "description": "<p>2018, collage on paper (For Lidia Klein)</p>",
+      "thumb": "beach_day_2018_tn.jpg",
+      "image": "beach_day_2018.jpg"
+    },
+    {
+      "title": "Open Window",
+      "year": "2018",
+      "shortname": "open_window_2018",
+      "description": "<p>2021, collage on paper (For Rebecca Uliasz)</p>",
+      "thumb": "open_window_2018_tn.jpg",
+      "image": "open_window_2018.jpg"
+    },
+    {
+      "title": "Fait Accompli",
+      "year": "2018",
+      "shortname": "fait_accompli_2018",
+      "description": "<p>2018, collage on paper</p>",
+      "thumb": "fait_accompli_2018_tn.jpg",
+      "image": "fait_accompli_2018.jpg"
+    },
+    {
+      "title": "Go Ahead",
+      "year": "2018",
+      "shortname": "go_ahead",
+      "description": "<p>2018, collage on paper (For Justine Oller)</p>",
+      "thumb": "go_ahead_tn.jpg",
+      "image": "go_ahead.jpg"
+    },
+    {
+      "title": "Landing",
+      "year": "2018",
+      "shortname": "landing_2018",
+      "description": "<p>2018, collage on paper (For Joan Sommers and Ernie Richter)</p>",
+      "thumb": "landing_2018_tn.jpg",
+      "image": "landing_2018.jpg"
+    },
+    {
+      "title": "Dilate",
+      "year": "2018",
+      "shortname": "dilate_2018",
+      "description": "<p>2018, collage on paper (For Shannan Hayes)</p>",
+      "thumb": "dilate_2018_tn.jpg",
+      "image": "dilate_2018.jpg"
+    },
+    {
+      "title": "Tarot Card, 1",
+      "year": "2017",
+      "shortname": "tarot_cards_1",
+      "description": "<p>2017, collage on paper</p>",
+      "thumb": "tarot_cards_1_tn.jpg",
+      "image": "tarot_cards_1.jpg"
+    },
+    {
+      "title": "Tarot Card, 2",
+      "year": "2017",
+      "shortname": "tarot_cards_2",
+      "description": "<p>2017, collage on paper</p>",
+      "thumb": "tarot_cards_2_tn.jpg",
+      "image": "tarot_cards_2.jpg"
+    },
+    {
+      "title": "WIN",
+      "year": "2017",
+      "shortname": "WIN",
+      "description": "<p>2017, collage on paper</p>",
+      "thumb": "WIN_tn.jpg",
+      "image": "WIN.jpg"
+    },
+    {
+      "title": "Hands, Flowers",
+      "year": "2016",
+      "shortname": "hands_flowers",
+      "description": "<p>2016, collage on paper (For Eylul Iscen)</p>",
+      "thumb": "hands_flowers_tn.jpg",
+      "image": "hands_flowers.jpg"
+    },
+    {
+      "title": "At the Baths",
+      "year": "2014",
+      "shortname": "baths_2014",
+      "description": "<p>2014, digital collage</p>",
+      "thumb": "baths_2014_tn.jpg",
+      "image": "baths_2014.jpg"
+    },
+    {
+      "title": "Pacific Theater",
+      "year": "2014",
+      "shortname": "pacific_theater_2014",
+      "description": "<p>2014, digital collage</p>",
+      "thumb": "pacific_theater_2014_tn.jpg",
+      "image": "pacific_theater_2014.jpg"
+    }
+  ]
+}

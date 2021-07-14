@@ -1,0 +1,40 @@
+{
+  "projects": [
+    {
+      "title": "QueerXscape (co-produced with Sinan Goknur), 2020",
+      "website": "https://artscenter.duke.edu/event/queerxscape/",
+      "shortname": "queerXscape",
+      "description": "QueerXscape reflects on the present from a queer collaborative perspective through a series of landscapes in mixed-media collage and video. The installation presents viewers with collaged landscape vistas and video that bring together queer camp with an environmental uncanny: familiar terrain interspersed with remnants of contemporary glass-walled urban architecture, unruly bodies, broken statuary, random trinkets, flowers, and food. The exhibit is a collaboration between two queer artists living between Durham, New York, and Istanbul and presents an aesthetic response to dominant modes of economic development that at once bridge these places and intensify their disparities in terms of urban and environmental life. <a href='https://researchblog.duke.edu/2019/09/26/the-making-of-queerxscape/'>Press</a>"
+    },
+    {
+      "title": "Researcher @ the S-1 Lab, 2013-2019",
+      "website": "https://s-1lab.org/",
+      "shortname": "S-1lab",
+      "description": "S-1 is a practice-based media research lab a space for artistic experimentation with emerging biometric and environmental sensing technologies and their impact on sensory experience."
+    },
+    {
+      "title": "co-producer, Incomputable Futures",
+      "website": "/archive/incomputable_futures",
+      "shortname": "incomputable_futures",
+      "description": "(March 1 and 2, 2019) A two-day symposium on representation, computataion, and exprimental scholarship."
+    },
+    {
+      "title": "co-producer, Data Determinacy: Race, Algorithms, and Critical Intervention",
+      "website": "https://cmac.duke.edu/news/data-determinacy-race-algorithms-and-critical-intervention",
+      "shortname": "data_determinacy",
+      "description": "(April 12 and 13, 2018) A symposium on race and data with speakers from across the humanities, followed by a one-day workshop and teach-in with new media artist Stephanie Dinkins."
+    },
+    {
+      "title": "Research & Design for <i>Medieval Color Comes to Light</i>, 2015",
+      "website": "https://aahvs.duke.edu/articles/medieval-color-comes-light",
+      "shortname": "VMS 328",
+      "description": "Worked with the Duke Lives of Things Bass Connections team to develop an app and light projection installation that enabled museum visitors to digitally recolor medieval-era statuary in the museum."
+    },
+    {
+      "title": "Web Designer, Art of the Mooc (dot) org, 2015-2019",
+      "website": "http://artofthemooc.org/wiki/",
+      "shortname": "artofthemooc",
+      "description": "Art of the MOOC (dot) org is the companion wiki to the Coursera course, Art of the MOOC, produced by artist and professor Pedro Lasch with support from Creative Time."
+    }
+  ]
+}
