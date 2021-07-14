@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <style>
+    
+        .icon {
+            height: 340px;
+            width: 340px;
+            background-color: #3e3e3e;
+            border: 2px solid #000;
+        }
+        
+        .icon {
+            margin: 1em;
+        }
+    
+    </style>
+    </head>
+<body>
+    <div class="container-fluid">
+        <div class="menu">
+            <button id="first">FIRST DIVS</button>
+            <button id="second">SECOND DIVS</button>
+            <button id="third">THIRD DIVS</button>
+        </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="icon first">FIRST</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="icon first">FIRST</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="icon first">FIRST</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="icon first">FIRST</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="icon first">FIRST</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="icon first">FIRST</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="icon second">SECOND</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="icon second">SECOND</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="icon second">SECOND</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="icon second">SECOND</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="icon second">SECOND</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="icon third">THIRD</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="icon third">THIRD</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="icon third">THIRD</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="icon third">THIRD</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="icon third">THIRD</div>
+                </div>
+                <div class="col-md-4">
+                    <div class="icon third">THIRD</div>
+                </div>
+            </div>
+        </div>
+    <script>
+        $(document).ready(function(){
+        /*fade out the un-selected divs and fade in the selected one.  Look at JQuery .fadeout(): https://www.w3schools.com/jquery/jquery_fade.asp   */
+        $("#first").click(function(){
+            $(".second").fadeOut(1000);
+            $(".third").fadeOut(1000, function(){
+                $(".first").fadeIn(1000);
+            });
+        });
+
+        $("#second").click(function(){
+            $(".first").fadeOut(1000);
+            $(".third").fadeOut(1000, function(){
+              $(".second").fadeIn(1000);  
+            });
+        });
+
+        $("#third").click(function(){
+            $(".first").fadeOut(1000);
+            $(".second").fadeOut(1000, function(){
+               $(".third").fadeIn(1000);
+            });
+
+        });
+            
+            
+      });
+    
+    </script>
+    </body>
+
+</html>
+

@@ -1,0 +1,321 @@
+body,html {
+        height:100vh;
+        margin:0;
+        padding:0;
+        font-family:'Montserrat', sans-serif;
+        background-color:#222222;
+        color: #fff;
+        }
+html {
+    background: url(images/bckgrnd_texture_inv.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+body { 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+h1,h2,h3,h4,h5 {
+    font-family: 'Major Mono Display', monospace;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    }
+a:visited {
+    color: #fff;
+    }
+a:hover,a:active {
+    text-decoration: underline;
+    }
+
+.dropdown {
+    display:inline-block;
+    position:relative;
+    margin: 0;
+    font-size:16px;
+    font-family: 'Major Mono Display', monospace;
+    width: 100%;
+}
+.dropdown-button {
+    color:#fff;
+    box-sizing:border-box;
+    position:relative;
+    float: left;
+    cursor:pointer;
+    transition:color .3s ease;
+    letter-spacing: 0.4em;
+    text-align:center;
+    }
+
+.dropdown-button:hover {
+    color:rgba(240, 239, 239, 0.15);
+    transition:color .3s ease;
+    }
+  
+        /*This is the active class--adding/removing it with the function creates the animation*/
+.dropdown ul.active {
+          visibility:visible;/*make it visible*/
+          transition:all .3s ease;
+        }
+.dropdown ul {
+        /*visibility: hidden makes this automatic when loading the doc*/
+        visibility:hidden;
+        overflow:hidden;
+        color:#fff;
+        transform-origin:left;
+        left:0;
+        padding:0;
+        margin: 0;
+        list-style:none;
+        transform:scaleX(0);
+        /*position absolutely so we can make sure it sits right under the button */
+        transition:all .3s ease;
+        }
+
+.dropdown li {
+    padding:8px 10px 8px 10px;
+    box-sizing:border-box;
+    cursor:pointer;
+    display: inline-block;
+    transition:color .2s ease;
+    position:relative;
+    color: #fff;
+    }/*because their containing element is positioned absolutely, we position these relative to the container */
+
+.dropdown li:hover {
+    color:rgba(240, 239, 239, 0.15);
+    transition:color .2s ease;
+    }
+
+.dropdown li.check {
+    border-bottom: 1px solid #fff;
+    }
+
+.container {
+    height:100%;
+    width:100%;
+    }
+
+@media only screen and (min-width: 768px) {
+    .title {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .title h1 {
+        font-size: 6em;
+    }
+    .title p {
+        font-size: 1.2em;
+        letter-spacing: 0.080em;
+    }
+    .dropdown-button {
+        width:200px;
+        padding:10px 30px 10px 30px;
+    }
+    .dropdown ul.active {
+          transform:scaleX(1.44);
+        }
+    .panel {
+        width: 80%;
+        margin: 0 auto;
+        padding: 2em 2.4em;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .title {
+        width: 90%;
+        margin: 0 auto;
+    }  
+    .title h1 {
+        font-size: 2.6em;
+    }
+    .title p {
+        font-size: 1.2em;
+        letter-spacing: 0.080em;
+    }
+    .dropdown-button {
+        width:140px;
+        padding:10px 14px 10px 10px;
+    }
+    .dropdown ul.active {
+          transform:scaleX(1);
+        }
+    .panel {
+        width: 95%;
+        margin: 0 auto;
+        padding: 1.2em 1em;
+    }
+    .presenters {
+        padding-left: 0;
+    }
+}
+
+.title h1 {
+    margin-bottom: 0;
+    text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+.title p {
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+    
+}
+
+.panel {
+    height: 80vh;
+    overflow-y:scroll;
+    margin-left: auto;
+    margin-right: auto;
+    visibility: hidden;
+    display: none;
+}
+
+.visiblePanel {
+    visibility: visible;
+    display: block;
+    }
+        
+.panel h1 {
+    margin: 0 auto;
+    font-size: 3.2rem;
+    line-height: 1.2;
+    width: 90%; 
+    text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+    }
+
+.panel h2 {
+    font-size: 1.8em;
+}
+
+.headline {
+    width: 90%;
+    margin: auto;
+    font-style: italic;
+    letter-spacing: 0.080em;
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1.6em;
+}
+
+.about p {
+    font-size: 1.1em;
+    line-height: 1.48;
+    text-align: justify;
+    text-align-last: left;
+    width: 90%;
+    margin: auto;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.schedule {
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.schedule p {
+    font-size: 0.8em;
+    padding-bottom: 1em;
+    padding-left: 12px;
+    text-align: left;
+    width: 100%;
+}
+.schedule ul {
+    text-align: left;
+    list-style-type: none;
+    width: 50%;
+    float: left;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+    0px 8px 13px rgba(0,0,0,0.1),
+    0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.schedule .top {
+    padding-left: 12px;
+}
+
+.schedule ul li {
+    padding: 8px 6px 10px 12px;
+    font-weight: 400;
+}
+
+.presenters {
+    width: 90%;
+    margin: 0 auto;
+}
+.presenters p {
+    padding-left: 12px;
+}
+
+.location {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(23, 23, 23, 0.50);
+    text-align: center;
+}
+
+.footer a {
+    color: #fff;
+    transition:color .2s ease;
+}
+
+.footer a:hover, 
+.footer a:active,
+.footer a:focus {
+    color:rgba(240, 239, 239, 0.15);
+    transition:color .2s ease;
+    text-decoration: none;
+}
+.footer h4 {
+    padding: 10px 0;
+    margin: 0.8em 0;
+}
+
+
+
+        
+
+    

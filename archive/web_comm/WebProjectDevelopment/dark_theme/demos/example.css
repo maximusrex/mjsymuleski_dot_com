@@ -1,0 +1,32 @@
+.body {
+                margin:0;
+            }
+            .title {
+               width:100%;
+                clear:both;
+                background-color: red;
+                padding: 2em;
+                color: #fff;
+            }
+            .leftDiv{
+                width: 30%;
+                background-color: blueviolet;
+                float: left;
+            }
+            .rightDiv{
+                width: 70%;
+                background-color: blue;
+                float: right;
+            }
+            
+            @media screen and (max-width: 768px) {
+                .leftDiv {
+                    width: 100%;
+                    font-size: 1.2em;
+                }
+                .rightDiv {
+                    width:100%;
+                    font-size: 1.2em;
+                }
+            }
+            }

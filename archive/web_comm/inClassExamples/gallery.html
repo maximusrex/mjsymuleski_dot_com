@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <!--this is a comment, a chunk of text surrounded by a tag that lets the browser know not to display it-->
+    
+    <title>My Gallery</title>
+    
+    <!--the link below is a link to a "css stylesheet" with code that defines how the tags in this document should display-->
+    
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round|Open+Sans:400,700&display=swap" rel="stylesheet">  
+    <link rel="icon" href="../favicon.ico">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="simpleLightbox-master/dist/simpleLightbox.min.css">
+    
+    <style>
+        body {
+            font-family: 'Open Sans';
+            margin: 0;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        .navmenu {
+            background-color: #333;
+            overflow: hidden;
+            width: 100%;
+            top: 0;
+            left: 0;
+            position: fixed;
+        }
+        
+        
+        /* Style the links inside the navigation bar */
+        .navmenu a {
+          float: left;
+          display: block;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+        }
+
+        /* Change the color of links on hover */
+        .navmenu a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+
+        /* Add an active class to highlight the current page */
+        .navmenu a.active {
+          background-color: #4CAF50;
+          color: white;
+        }
+
+        /* Hide the link that should open and close the topnav on small screens */
+        .navmenu .icon {
+          display: none;
+        }
+        
+        /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+        @media screen and (max-width: 600px) {
+          .navmenu a:not(:first-child) {display: none;}
+          .navmenu a.icon {
+            float: right;
+            display: block;
+          }
+        }
+
+        /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+        @media screen and (max-width: 600px) {
+          .navmenu.responsive {position: relative;}
+          .navmenu.responsive a.icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+          }
+          .navmenu.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+          }
+        }
+        
+        .main {
+            margin-top: 4em;
+        }
+        
+        .row {
+            width: 100%;
+
+        }
+        
+        .row a {
+            width: 33%;
+            display: inline-block;
+        }
+        
+        .row a img {
+            display: block;
+            width: 90%;
+            height: auto;
+            margin: 20px auto;
+            padding: 10px;
+
+        }
+        
+        .row a img:hover {
+            border: 3px solid #575757;
+        }
+        
+        /*simple @media to handle responsiveness*/
+        @media screen and (max-width: 768px){
+            /*change display to block to remove flex display*/
+            .row a {
+                display: block;
+                width: 90%;
+                margin: 10px auto;
+            }
+        }
+    
+    
+    
+    </style>
+</head>
+<body>
+    <div class="navmenu" id="navmenu">
+       <a href="#">Home</a>
+           <a href="#">About</a>
+           <a href="#">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="bunnies()">
+            <i class="fa fa-user-circle"></i>
+        </a>
+     </div>
+    <div class="main">
+        <h1>Portfolio</h1>
+        <div class="row" id="myrow">
+            <a href="portfolio/baths_2013.jpg" title="Baths, 2013"><img src="portfolio/thumbs/baths_2013_thumb.jpg"></a>
+            <a href="portfolio/dilate_2018.jpeg" title="Dilate, 2018"><img src="portfolio/thumbs/dilate_2018_thumb.jpg"></a>
+            <a href="portfolio/twinsies.jpg" title="Twinsies, 2019"><img src="portfolio/thumbs/twinsies_2019_thumb.jpg"></a>
+            <a href="portfolio/openWindow_2018.jpg" title="Open Window, 2019"><img src="portfolio/thumbs/openWindow_2018_thumb.jpg"></a>
+             <a href="portfolio/coverup_2019.jpg" title="Cover Up, 2019"><img src="portfolio/thumbs/coverup_2019_thumb.jpg"></a>
+             <a href="portfolio/rorsarch_2019.jpg" title="Rorsarch, 2019"><img src="portfolio/thumbs/rorsarch_2019_thumb.jpg"></a>
+             <a href="portfolio/shitgardens_2019.jpg" title="Shit Gardens, 2019"><img src="portfolio/thumbs/shitgardens_2019_thumb.jpg"></a>
+             <a href="portfolio/beachDay_2018.jpg" title="Beach Day, 2018"><img src="portfolio/thumbs/beachDay_2018_thumb.jpg"></a>
+             <a href="portfolio/lillithsBrood.jpg" title="Lilith's Brood, 2018"><img src="portfolio/thumbs/lillithsBrood_thumb.jpg"></a>
+        </div>
+    
+    </div>
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+    <script src="simpleLightbox-master/dist/simpleLightbox.js"></script>
+    <script>
+      $('#myrow a').simpleLightbox();
+    
+        $('.lightBoxVideoLink').simpleLightbox();
+      
+    </script>
+    <script>
+        function bunnies() {
+            var x = document.getElementById("navmenu");
+            if (x.className === "navmenu") {
+                x.className += " responsive";
+                } else {
+                    x.className = "navmenu";
+            }
+        }
+    </script>
+                   
+</body>
+</html>

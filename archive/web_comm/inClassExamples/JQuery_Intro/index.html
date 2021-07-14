@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <style>
+        
+    
+        .icon {
+            height: 340px;
+            width: 340px;
+            background-color: #3e3e3e;
+            border: 2px solid #000;
+        }
+        
+        
+        .icon {
+            margin: 1em;
+        }
+        
+        .newClass {
+            background-color: #000;
+            color: #fff;
+            padding: 2em;
+            border: 2px solid #ff0000;
+        }
+        
+        .linkList {
+            margin: 1em auto;
+            text-align: center;
+        }
+    
+    </style>
+    </head>
+<body>
+    <div class="container-fluid p-3">
+        <div class="jumbotron jumbotron-fluid p-4">
+            <h1 class="display-2">
+            Intro To JQuery</h1>
+            <p>JavaScript for User Interaction and Effects</p>
+            <hr class="my-4">
+            <a href="JQuery_Intro.zip"><button type="button" class="btn btn-primary m-2 stretched link">Download a .zip version of this Site</button></a>
+        </div>
+        <div class="row my-4">
+        <div class="col"></div><!--spacer column-->
+        <div class="col-10">
+            <h2 class="text-center">What is JQuery?</h2>
+            <div class="container m-2 p-2" id="icanhide">
+            <p>JQuery is a Javascript Library specifically written manipulating DOM elements (the elements that make up an HTML document) and changing their css/display properties.  Its syntax of selectors and actions makes it very human-readable and easy to select elements on the page by their class, id, or selector and do things to them.</p>
+            <p>When using JQuery, remember you should always reference the <a href="https://code.jquery.com/">The JQuery Library</a> in your page, before you write any scripts.</p>
+            <p>The jQuery syntax is tailor-made for selecting HTML elements and performing some action on the element(s).</p>
+
+            <p>Basic syntax is: $(selector).action()</p>
+
+            <p>A $ sign to define/access jQuery
+            <br>A (selector) to "query (or find)" HTML elements
+            <br>A jQuery action() to be performed on the element(s)</p>
+            <p>Examples:<br>
+                $(this).hide() - hides the current element.<br>
+                $("p").hide() - hides all p elements.<br>
+                $(".test").hide() - hides all elements with class="test".<br>
+                $("#test").hide() - hides the element with id="test".</p> 
+            <p>Click the button above to see .hide() in action.</p>
+        </div>
+            <button type="button" class="btn btn-primary m-2" id="hideButton">Hide the div above</button>
+            </div>
+    <div class="col"></div><!--spacer column-->
+        </div><!--row-->
+        <div class="row my-4">
+        <div class="col-md-4">
+            <div class="section">
+            <button type="button" class="btn btn-primary m-2 toggleButton">click to toggle</button>
+            <p class="toggledThing m-2 p-2">The .toggle() function lets you click between hiding and showing. Click the button above to hide this thing, and click it again to show this thing.</p>
+            </div>
+            </div>
+        <div class="col-md-4">
+            <div class="section">
+            <button type="button" class="btn btn-primary m-2 slideButton">click to slideToggle</button>
+            <p class="slidingThing m-2 p-2">You can also get more specific with how things are displayed with specific action functions like .slide.  This div will slideToggle() when the button is clicked.</p>
+            </div>
+            </div>
+        <div class="col-md-4">
+            <div class="section">
+            <button type="button" class="btn btn-primary m-2 addClasses">Click to Add a Class</button>
+            <p class="gettingAClass m-2 p-2">You can also use JQuery to add, remove or toggle a class in CSS.  That way, you can assign styles to be manipulated with user-interaction.  You can use this to change color, background, display properties:  anything that you can style with CSS.</p>
+            </div>
+            </div>
+        </div>
+        <div class="row my-4">
+            <div class="col-md-2"></div>
+            <div class="col-8 p-4">
+            <h3 class="text-center">Things to Do With JQuery!</h3>
+               <div class="row">
+                <ul class="nav flex-column linkList">
+                  <li class="nav-item"><a class="nav-link" href="fadeIn_out.html">Fade In/Out Divs</a></li>
+                  <li class="nav-item"><a class="nav-link" href="horizontal-scroll.html">Horizontal Scrolling Page</a></li>
+                  <li class="nav-item"><a class="nav-link" href="smooth-scrolling.html">Smooth Scrolling Navigation</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../../WebProjectDevelopment/demos/jquery_1.html">More JQuery Examples (Web Dev II Class)</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../../WebProjectDevelopment/demos/jquery_dropdown.html">JQuery Dropdown (hide/show panels)</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../../WebProjectDevelopment/demos/jquery_plugin_demo.html">3 JQuery Plugins: Big Text, Timeline Panels, Another Lightbox</a></li>
+              </ul>
+                </div>
+            </div>
+           <div class="col-md-2"></div> 
+        </div>
+    </div>
+    <script>
+        /*the first line prevents the jquery from firing until the document is fully loaded (and all the elements are present).  this then opens a function on .ready(), and all of the JQuery for the page goes within this function's brackets.  This is the "function" that fires when the document is loaded that contains all of our individual functions
+        */
+     $(document).ready(function(){
+        
+         
+         $("#hideButton").click(function(){
+            $("#icanhide").hide(1000, function(){
+                alert('the paragraph is hidden.  Reload the page to see it again.');
+            });
+        });
+   
+        
+        /*the toggle!*/
+        $('.toggleButton').click(function(){
+            $('.toggledThing').toggle(1000,"linear");
+        });
+         
+        /*the slideToggle*/
+         $('.slideButton').click(function(){
+            $('.slidingThing').slideToggle(1000,"linear");
+        });
+         
+         /*adding a class!*/
+        $('.addClasses').mouseenter(function(){
+            $('.gettingAClass').addClass("newClass");
+            /*also .removeClass() .toggleClass()*/
+        });
+         
+        $('.addClasses').mouseleave(function(){
+            $('.gettingAClass').removeClass("newClass");
+            /*also .removeClass() .toggleClass()*/
+        });
+         
+        /*getting properties of elements*/
+         $('.gettingAClass').click(function(){
+             var x = $('.gettingAClass').html();
+            console.log(x);
+         });
+         
+      });
+    </script>
+    </body>
+
+</html>
+

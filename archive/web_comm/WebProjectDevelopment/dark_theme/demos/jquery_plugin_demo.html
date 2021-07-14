@@ -1,0 +1,163 @@
+<!Doctype HTML>
+<html>
+<head>
+    <title>Jquery Plugins Demo</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="js/timelinejs-master/dist/css/timeline.min.css">
+        <link rel="stylesheet" href="js/lightbox2-master/dist/css/lightbox.min.css">
+    <style>
+
+        .gallery {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            
+        }
+        
+        .gallery a {
+            width: 30%;
+        }
+        
+        .gallery img {
+            width: 90%;
+            height: auto;
+            margin: 0.4em;
+        }
+        
+        .section {
+            margin: 4em auto;
+            padding-top: 1em;
+            padding-bottom: 4em;
+            border-bottom: 1px solid #000;
+        }
+        
+        
+        .section h1 {
+            text-align: center;
+        }
+        
+        .title {
+            min-height: 20vh;
+            margin: 2em;
+            padding: 0.4em;
+            border: 1px solid #000;
+        }
+        
+        .panel img {
+            margin: 1em;
+            }
+        .panel p {
+            text-align: justify;
+            margin: 1em;
+        }
+        
+
+ 
+    </style>
+    </head>
+<body>
+    <div class="container-fluid section">
+        <p style="width:80%;margin:0 auto;text-align:center">Use <a href="https://github.com/zachleat/BigText">Bigtext.js</a> to make these texts size to the container</p>
+    <div class="row">
+        <div class="col"></div>
+        <div class="col-md-4">
+            <div class="title"><h1>A Big Title</h1></div>
+        </div>
+        <div class="col-md-7">
+            <div class="title"><h1>Second Title</h1></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="title"><h1>A much longer title or big phrase</h1></div>
+        </div>
+    </div>
+    </div><!--container-fluid-->
+    <div class="container-fluid section">
+        <p style="width:80%;margin:0 auto;text-align:center">Use <a href="https://ilkeryilmaz.github.io/timelinejs/">Timelinejs</a> to make a panel display with clickable navigation</p>
+    <div class="row">
+    <div class="col">
+        <div class="timeline-container">
+        <div class="timeline js-timeline">
+            <div data-time="One" class="panel">
+                <img src="images/puppy.jpeg" style="width:200px;height:auto;float:left"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac interdum metus. Etiam commodo tellus lacus. Fusce at ligula quis ipsum gravida ultricies eu sed mi. Curabitur rhoncus, mauris eget ultricies pretium, risus lorem consequat dolor, sed facilisis turpis metus vitae sem. Ut sed eleifend magna. Etiam lacinia aliquam efficitur. Morbi congue enim ipsum, dictum mattis enim ullamcorper volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non urna eu massa facilisis maximus. Fusce hendrerit nisi sed mi consequat ornare. Sed non egestas nisl. Aliquam vel lectus non enim condimentum eleifend. Aenean dignissim faucibus nisi non rutrum. Quisque aliquam nisl ligula, vitae suscipit nisl tristique quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non urna eu massa facilisis maximus. Fusce hendrerit nisi sed mi consequat ornare. Sed non egestas nisl. Aliquam vel lectus non enim condimentum eleifend. Aenean dignissim faucibus nisi non rutrum. Quisque aliquam nisl ligula, vitae suscipit nisl tristique quis.</p>
+            </div>
+             <div data-time="Two" class="panel">
+                <img src="images/puppy_1.jpeg" style="width:200px;height:auto;float:left"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac interdum metus. Etiam commodo tellus lacus. Fusce at ligula quis ipsum gravida ultricies eu sed mi. Curabitur rhoncus, mauris eget ultricies pretium, risus lorem consequat dolor, sed facilisis turpis metus vitae sem. Ut sed eleifend magna. Etiam lacinia aliquam efficitur. Morbi congue enim ipsum, dictum mattis enim ullamcorper volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non urna eu massa facilisis maximus. Fusce hendrerit nisi sed mi consequat ornare. Sed non egestas nisl. Aliquam vel lectus non enim condimentum eleifend. Aenean dignissim faucibus nisi non rutrum. Quisque aliquam nisl ligula, vitae suscipit nisl tristique quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non urna eu massa facilisis maximus. Fusce hendrerit nisi sed mi consequat ornare. Sed non egestas nisl. Aliquam vel lectus non enim condimentum eleifend. Aenean dignissim faucibus nisi non rutrum. Quisque aliquam nisl ligula, vitae suscipit nisl tristique quis.</p>
+            </div>
+             <div data-time="Three" class="panel">
+                <img src="images/puppy_1.jpeg" style="width:200px;height:auto;float:left"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac interdum metus. Etiam commodo tellus lacus. Fusce at ligula quis ipsum gravida ultricies eu sed mi. Curabitur rhoncus, mauris eget ultricies pretium, risus lorem consequat dolor, sed facilisis turpis metus vitae sem. Ut sed eleifend magna. Etiam lacinia aliquam efficitur. Morbi congue enim ipsum, dictum mattis enim ullamcorper volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non urna eu massa facilisis maximus. Fusce hendrerit nisi sed mi consequat ornare. Sed non egestas nisl. Aliquam vel lectus non enim condimentum eleifend. Aenean dignissim faucibus nisi non rutrum. Quisque aliquam nisl ligula, vitae suscipit nisl tristique quis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non urna eu massa facilisis maximus. Fusce hendrerit nisi sed mi consequat ornare. Sed non egestas nisl. Aliquam vel lectus non enim condimentum eleifend. Aenean dignissim faucibus nisi non rutrum. Quisque aliquam nisl ligula, vitae suscipit nisl tristique quis.</p>
+            </div>
+             <div data-time="Four" class="panel">
+                <img src="images/puppy_2.jpg" style="width:200px;height:auto;float:left"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac interdum metus. Etiam commodo tellus lacus. Fusce at ligula quis ipsum gravida ultricies eu sed mi. Curabitur rhoncus, mauris eget ultricies pretium, risus lorem consequat dolor, sed facilisis turpis metus vitae sem. Ut sed eleifend magna. Etiam lacinia aliquam efficitur. Morbi congue enim ipsum, dictum mattis enim ullamcorper volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non urna eu massa facilisis maximus. Fusce hendrerit nisi sed mi consequat ornare. Sed non egestas nisl. Aliquam vel lectus non enim condimentum eleifend. Aenean dignissim faucibus nisi non rutrum. Quisque aliquam nisl ligula, vitae suscipit nisl tristique quis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non urna eu massa facilisis maximus. Fusce hendrerit nisi sed mi consequat ornare. Sed non egestas nisl. Aliquam vel lectus non enim condimentum eleifend. Aenean dignissim faucibus nisi non rutrum. Quisque aliquam nisl ligula, vitae suscipit nisl tristique quis.</p>
+            </div><!--last panel-->
+            </div>
+        </div><!--timeline container-->
+    </div><!--col-->
+    </div><!--row-->
+    </div><!--container-fluid-->
+    <div class="container-fluid section">
+        <p style="width:80%;margin:0 auto;text-align:center">use <a href="https://lokeshdhakar.com/projects/lightbox2/">Lightbox 2</a> to make these into a gallery</p>
+        
+        <div class="gallery">
+            
+            <a href="images/gallery_demo/beachDay_2018.jpg" data-lightbox="image-1" data-title="My caption" ><img src="images/gallery_demo/thumbs/beachDay_2018_thumb.jpg"></a>
+            
+            <a href="images/gallery_demo/lillithsBrood.jpg" data-lightbox="image-1" data-title="My caption"><img src="images/gallery_demo/thumbs/lillithsBrood_thumb.jpg"></a>
+            
+            <a href="images/gallery_demo/openWindow_2018.jpg" data-lightbox="image-1" data-title="My caption"><img src="images/gallery_demo/thumbs/openWindow_2018_thumb.jpg"></a>
+            
+            <a href="images/gallery_demo/WIN.jpeg" data-lightbox="image-1" data-title="My caption"><img src="images/gallery_demo/thumbs/WIN_thumb.jpg"></a>
+            
+            <a href="images/gallery_demo/baths_2013.jpg" data-lightbox="image-1" data-title="My caption"><img src="images/gallery_demo/thumbs/baths_2013_thumb.jpg"></a>
+            
+            <a href="images/gallery_demo/dilate_2018.jpeg" data-lightbox="image-1" data-title="My caption"><img src="images/gallery_demo/thumbs/dilate_2018_thumb.jpg"></a>
+            
+            <a href="images/gallery_demo/faitAccompli_2018.jpg" data-lightbox="image-1" data-title="My caption"><img src="images/gallery_demo/thumbs/faitAccompli_2018_thumb.jpg"></a>
+            
+            <a href="images/gallery_demo/goAhead.jpeg" data-lightbox="image-1" data-title="My caption"><img src="images/gallery_demo/thumbs/goAhead_thumb.jpg"></a>
+            
+            <a href="images/gallery_demo/triptych.jpg" data-lightbox="image-1" data-title="My caption"><img src="images/gallery_demo/thumbs/triptych_thumb.jpg"></a>
+            
+        </div>
+        
+  
+    </div>
+
+        <!--bootstrap scripts-->
+        <!--jquery-->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <!--Popper js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <!--bootstrap-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!--bigtext-->
+        <script src="js/bigtext.js"></script>
+        <!--timeline-->
+        <script src="js/timelinejs-master/dist/js/timeline.min.js"></script>
+        <!--lightbox-->
+        <script src="js/lightbox2-master/dist/js/lightbox.min.js"></script>
+
+        <script>
+        
+            $(function(){
+                'use strict';
+                //make the text big with bigtext.js
+                $('.title').bigtext();
+        
+                
+                //make panels into a sliding "timeline"
+                $('.js-timeline').Timeline();
+                
+                //make a lightbox
+                 lightbox.option({
+                'resizeDuration': 200,
+                'wrapAround': true,
+                fadeDuration: 800
+    })
+                
+            });
+        </script>
+    </body>
+</html>

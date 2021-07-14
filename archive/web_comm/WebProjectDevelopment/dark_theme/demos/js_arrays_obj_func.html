@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Arrays, Objects, Functions</title>
+    </head>
+<body>
+    <h1 style="text-align:center;width:40%;margin:1em auto;">Arrays, Objects and Functions</h1>
+    <p style="width:60%;margin:1em auto;">To view the contents (code and comments) of this file, save it as an .html file to your hard drive and open it up in a text editor.</p>
+    <p style="width:60%;margin:1em auto;">To view the output of this file, open up the working version saved on your hard drive in a web browser and view the output in the JavaScript console.</p>
+    <div style="margin:1em auto;background:#c3c3c3;border:1px solid #000;padding:1em;">Output of myFunction:<p id="demo"></p></div>
+    <div style="margin:1em auto;background:#c3c3c3;border:1px solid #000;padding:1em;">Output of calculateArea: <p id="demo2"></p></div>
+<script>
+    //Arrays
+    //An array is a set of values stored under one variable.  They're enclosed by square braces, and each item is separated by a comma
+    var colors = [
+        'red',
+        'blue',
+        'green',
+        'purple'];
+    
+    //note that the array does not have an ending comma.  Each value in an array has an "index value"
+    //check the output in the console to see the result of the code on line 22
+    console.log(colors[2]);//log the value at position 0 to the console.
+    //the "index" of the array (the position of each value), like the "index" of a string, always starts at [0]
+    
+    //arrays, like strings, also have a "length" property.
+    var numItems = colors.length;
+    console.log(numItems);
+    
+    //Arrays can have more than one type of value.
+    var randomArray = [
+        'sandwiches'
+        true,
+        2.346
+    ]
+    
+    //console.log the type of value in the second position of randomArray
+   // console.log(typeof(randomArray[2]));
+    
+    //you can also access and update the values in the array using the index
+    //randomArray[0] = 'dice';
+    //console.log(randomArray);
+    
+
+    
+    //Functions.
+    //A function is a block of code, grouped and executed together to perform a specific task.  
+    //basic syntax of declaring a function
+    function myFunction() {
+        document.getElementById("demo").textContent = "myFunction has run";
+    }
+    
+    //you have to run a function; but because it has a name we can run it again.
+    myFunction();
+    
+    //Javascript and other libraries come with embedded functions. We've used:
+    // getElementById(), which is a function native to javascript for getting document elements.  It takes one parameter - the Id of the element you want to get.
+    
+    //some functions take parameters
+    function calculateArea(width,height) {
+       return width * height;
+    }
+    
+    //run the function above with the parameters 4 and 12, and store that to the variable x
+    var x = calculateArea(4,12);
+    console.log(x); 
+
+    //I could also add this to the document
+    document.getElementById("demo2").innerHTML = calculateArea(10,2); 
+
+    
+    //Objects
+    //javascript is an object-oriented language.  Most everything in javascript is actually an object or can act as an object.  The simplest way to understand objects is that they are a way to represent things in the world.  Objects have properties with values, and methods, which are functions that perform tasks or execute code specific to the function.  
+    
+    //creating the object "person" with an object literal notation.  Note that commas separate key value pairs.
+    var person = {
+        firstName: 'Joe',
+        lastname: 'Smith',
+        age: 33,
+        hobbies: ['video games', 'crossword puzzles', 'wood working'],
+        birthdayParty: function() {
+            this.age++;//increment age by 1.  note the use of the "this" keyword here.  This refers to "this object"
+        }
+    }
+    
+    //check Joe's age
+    console.log(person.age);
+    //run the method on person
+    person.birthdayParty();
+    //console.log the new age by accesing the property using . notation
+    console.log(person.age);
+    console.log(person.firstName + " " + person.lastname + " " + "is " + person.age);
+    
+    //Objects and arrays allow you to store complex arrangements of data.
+    //Arrays can be part of an object just like functions
+    var student = {
+        firstName: 'Jane',
+        lastName: 'Doe',
+        gradYear: 2020,
+        courses: ['english','spanish','physics II','calculus']
+    }
+    console.log(student.courses[2]);
+    
+    //but looking at this, we might want to have more than one student, or more than one thing with these properties and methods
+    //we can create these using object constructor notation, and then create multiple instances of objects, under different variables, with the same properties (though with different values) and methods.
+   function course(name,location,time,maxStudents) {
+       //note this is a function, so I am using ; to end statements
+       this.name = name;
+       this.location = location;
+       this.time = time;
+       this.maxStudents = maxStudents;
+   }
+    //now I can add values to the properties of this by passing them to the parameters
+    var webDesign = new course('web design','Smith 324','12:30pm', 25);
+    
+    console.log(webDesign.time);
+    
+    var chemistry = new course('Chemistry 101','Friedl 114','1:25pm', 120);
+    
+    console.log(chemistry.location); 
+    
+    //Javascript is built for web design and execution in the browser.  So it also comes with a number of embedded objects with properties and methods.  Like the "document" object, and the "window" object
+    //document.getElementById() - takes an "id" in the page as an argument, returns the element with that id
+    //document.title - the title of the current document
+    //document.URL - returns a string containing the URL of the current document.
+ 
+    </script>
+    <div>
+        <button onclick = "document.getElementById('demo3').innerHTML = document.title">What's the title of this page?</button>
+        <p id="demo3"></p>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Embedding Things!</title>
+    <style>
+        body {
+            font-family: 'Helvetica', sans-serif;
+            font-size: 16px;
+        }
+        .main {
+            width: 80%;
+            margin: 2em auto;
+        }
+
+        
+        a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+            color: #164ca3;
+        }
+        
+        .embeds {
+            text-align: center;
+        }
+        
+        .example {
+            width: 80%;
+            margin: 1em auto 2em;
+            padding: 0.6em;
+            border: 1px solid #000;
+        }
+        
+
+    </style>
+    </head>
+<body>
+    <div class="main">
+    <h2>Embedding Things!</h2>
+    <p>HTML has specific tags for embedding media from other sources.  These offer specific options for embedding video, mp3 and other kinds of sound files, web applets, and even other web pages.  Many of these tags have special attributes like "autoplay" that are specific to embedded media.</p>
+    <div class="embeds">
+        <div class="example">
+            <h4>The Video Tag</h4>
+            <video width="340" controls>
+            <source autoplay="false" src="cage_433.mp4" type="video/mp4">
+            </video>
+            <p>You can find a full list of video attributes <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video">here.</a></p>
+        </div>
+        <div class="example">
+            <h4>or Embed Tag</h4>
+           <embed type="video/webm" src="cage_433.mp4" width="400" height="340">
+            <p>*note that the video tag has more attributes</p>
+        </div>
+        <div class="example">
+            <h4>The Audio Tag</h4>
+            <audio controls>
+            <source src="voice_hello.mp3" type="audio/mpeg" autoplay="false">
+             Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="example">
+            <h4>The iframe Tag</h4>
+            <p>Lots of embeds use the iframe tag.</p>
+            <p>You can embed another website.</p>
+            <iframe src="http://mjsymuleski.com" width="400px" height="380px"></iframe>
+        </div>
+        <div class="example">
+            <h4>Iframe youtube video</h4>
+            <p>The "sharing" link on youtube also has an embed option that generates html.</p>
+            <iframe width="400" height="280" src="https://www.youtube.com/embed/NpP3rrNoEqo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="example">
+            <h4>Open Street Map iFrame</h4>
+            <iframe width="380" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-79.00028228759767%2C35.983215347419026%2C-78.9166831970215%2C36.01828144874308&amp;layer=mapnik&amp;marker=36.00075034718651%2C-78.95848274230957" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=36.0008&amp;mlon=-78.9585#map=14/36.0008/-78.9585">View Larger Map</a></small>
+            <p>Embed a map from <a href="https://www.openstreetmap.org">Open Street map.</a> Note: this also works with google maps - you can always find a link to the HTML code under "sharing" on either service.</p>
+        <div class="example">
+            <h4>Twitter Timeline Embed</h4>
+            <p>Twitter has <a href="https://publish.twitter.com/">a website</a> that lets you generate an iFrame to embed a twitter timeline</p>
+            <a class="twitter-timeline" data-width="400" data-height="600" href="https://twitter.com/maxsym_23?ref_src=twsrc%5Etfw">Tweets by maxsym_23</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    
+    
+    </body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AOS Library For Scroll Effects</title>
+    <!--link AOS Stylesheet-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+    
+    
+            body {
+              font-family: Helvetica,Tahoma;
+            }
+
+            *,
+            *:before,
+            *:after {
+              box-sizing: border-box;
+            }
+
+            .main {
+              width: 100%;
+              overflow: scroll;
+              top: 0;
+              right: 0;
+              padding: 15px;
+              color: white;
+              background-color: rgba(0,0,0,0.4);
+            }
+
+            .aos-item {
+              background: #ccc;
+              border: 5px solid #000;
+              width: 300px;
+              height: 300px;
+              padding: 20px;
+              margin: 6em auto;
+              padding-top: 30px;
+              padding-bottom: 30px;
+            }
+        
+        .one {
+            position: fixed;
+            top: 20%;
+            left: 20px;
+        }
+        
+        .two {
+           margin-right: 40%; 
+        }
+        
+        .three {
+            margin-left: 40%;
+        }
+
+
+
+    
+    </style>
+    
+    </head>
+<body>
+    <div class="main">
+        <h1>Scroll Effects with Plugins</h1>
+        <p>Scroll effects with the <a href="https://michalsnik.github.io/aos/">AOS (Animate on Scroll) plugin</a></p>
+        
+        <div data-aos-anchor="#triggerOne" class="aos-item one" data-aos-delay="800" data-aos-duration="1000" data-aos="fade-up">Fade Up</div>
+
+      <div  class="aos-item two" data-aos="zoom-out-down">Zoom Out Down</div>
+      <div  class="aos-item three" data-aos="fade-right">Fade Right</div>
+      <div class="aos-item" data-aos="fade-left">Fade Left</div>
+      <div class="aos-item" data-aos="zoom-out-right" data-aos-offset="200" data-aos-delay="20" data-aos-mirror="true" data-aos-once="false">Zoom out Right (ADD Controls)</div>
+      <div id="triggerOne" class="aos-item" data-aos="zoom-out-left" data-aos-offset="200">Zoom Out Left</div>
+      <div class="aos-item" data-aos="fade-up-right" data-aos-duration="600">Fade Up Right</div>
+      <div class="aos-item" data-aos="fade-up-left" data-aos-easing="ease-in" >Fade Up Left</div>
+      <div class="aos-item" data-aos="fade-down-right" data-aos-easing="ease-in-out">Fade Down Right</div>
+      <div class="aos-item" data-aos="fade-down-left" data-aos-anchor-placement="top-center">Fade Down Left</div>
+      <div class="aos-item" data-aos="flip-right">Flip Right</div>
+      <div class="aos-item" data-aos="flip-left">Flip Left</div>
+      <div class="aos-item" data-aos="zoom-in-up">Zoom in up</div>
+      <div class="aos-item" data-aos-easing="ease-in-cubic" data-aos="zoom-in-left">Zoom in Left</div>
+      <div class="aos-item" data-aos="fade-up"></div>
+      <div class="aos-item" data-aos="fade-down"></div>
+      <div class="aos-item" data-aos="fade-up"></div>
+      <div class="aos-item" data-aos="zoom-out"></div>
+      <div class="aos-item" data-aos="fade-up"></div>
+      <div class="aos-item" data-aos="zoom-out"></div>
+      <div class="aos-item" data-aos="fade-in"></div>
+      <div class="aos-item" data-aos="zoom-out-up"></div>
+      <div class="aos-item" data-aos="zoom-out-down"></div>
+    </div><!--main-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({easing: 'ease-in-sine'});
+    </script>
+    </body></html>

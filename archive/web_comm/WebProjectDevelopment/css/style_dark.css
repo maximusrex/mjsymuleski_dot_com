@@ -1,0 +1,281 @@
+/*Stylesheet for http://people.duke.edu/~mjs97/  2/2019 ISS241 / VMS 257 Class Website */
+body, html {
+    font-family: 'Montserrat', 'Helvetica', sans-serif;
+    background-color: #000;
+    color: #fff;
+    min-height: 100%;
+}
+
+h1,h2,h3,h4, h5 {
+    font-family: 'Staatliches', 'Helvetica', sans-serif;
+}
+
+a {
+    color: #fff;
+}
+
+.container-fluid {
+    padding-bottom: 2.4em;
+}
+
+.navbar {
+    background-color: #000;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,93,115,0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler {
+  border-color: rgba(255,93,115,0.8);
+} 
+
+.collapse.show {
+    background-color: rgba(0, 0, 0, 0.90);
+}
+
+.collapse.show .nav-link {
+    padding: 0.5rem 1rem;
+}
+
+.nav-link {
+    transition: background-color 0.5s;
+}
+.nav-link:hover {
+    color: #fff;
+    background-color: rgba(255,93,115,0.8);
+}
+
+
+.panel {
+    min-height:100vh;
+    overflow-y: scroll;
+}
+
+.panel h2 {
+    width: 80%;
+    margin: 0.5em auto;
+    text-align: center;
+}
+
+.title {
+    line-height: 0.8;
+    padding: 3em 0.8em 0.4em 1.6em;
+    min-height: 46vh;
+    border: 2px solid #fff;
+    border-radius: 2px;
+}
+
+
+.about {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 0.2em;
+}
+
+/*Masonry Grid styles*/
+.grid {
+    max-width: 1200px;
+    padding-bottom: 2em;
+}
+
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid-item {
+  width: 140px;
+  min-height: 90px;
+  float: left;
+  border-radius: 5px;
+  padding: 1em;
+}
+
+.assignments .grid-item:hover {
+    background-color:rgba(255,93,115,0.8);
+    color: #fff;
+}
+
+.assignments .grid-item {
+      color: #000;
+      background-color: #ffffff;
+      border: 2px solid #333;
+      border-color: hsla(0, 0%, 0%, 0.5);
+      transition: background-color 0.5s;
+}
+
+.assignments .grid-item a {
+      color: #000;
+}
+
+.demo .grid-item {
+      color: #fff;
+      background-color: #000;
+      border: 2px solid #fff;
+      border-color: hsla(0, 0%, 100%, 0.5);
+      transition: background-color 0.5s;
+}
+
+.demo .grid-item:hover {
+    background-color:rgba(255,93,115,0.8);
+    color: #fff;
+}
+
+.grid-item--width2 { width: 280px; }
+.grid-item--width3 { width: 420px; }
+.grid-item--width4 { width: 480px; }
+
+
+
+#assignments-panel, #blog-panel, #description, #storyboard, #final {
+    background-color: #fff;
+    color: #000;
+}
+
+#storyboard, #final, #draft h4 {
+    text-align: center;
+}
+
+
+#description a {
+    color: #000;
+    font-weight: bold;
+}
+
+
+.research .card-header {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 6px;
+   
+}
+
+.research .card-header .btn-link {
+    color: #fff;
+}
+
+.research .collapse.show {
+    background-color: #000;
+    color: #fff;
+}
+
+.research div.card {
+    background-color: #000;
+}
+
+.research div.card a {
+    color: #fff;
+}
+
+.research div.card a:hover {
+    color: rgba(255,93,115,0.8);
+}
+
+.research .card-header .btn {
+    font-size: 1.4rem;
+}
+
+.assignments a {
+    font-family: "Montserrat", sans-serif;
+}
+
+.demo ul li {
+    max-width: 32%;
+    height: auto;
+    padding: 1em 0.6em;
+    margin: 0.2em;
+    border-radius: 4px;
+    transition: background-color 0.5s;
+    text-align: right;
+}
+
+.demo ul li {
+    border: 1px solid #fff;
+}
+
+.demo ul li a {
+    color: #fff;
+}
+
+.demo ul li:hover {
+    background-color: rgba(255,93,115,0.8);
+}
+
+.demo ul li a:hover {
+    text-decoration: none;
+}
+
+.blog-post {
+    height: 60vh;
+    overflow-y: scroll;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0.4em 1.4em;
+    text-align: left;
+}
+
+
+.blog-post a {
+    color: #000;
+    transition: color .4s;
+    text-decoration: underline;
+}
+
+.about a:hover, .blog-post a:hover, .about-site a:hover {
+    color: rgba(255,93,115,0.8);
+}
+
+.blog-post h3 {
+    margin: 0.6em 0;
+}
+
+.blog-post img {
+    float: left;
+    margin: 0.4em;
+}
+
+.slick-prev:before, .slick-next:before {
+    color: #000;
+}
+
+.slick-prev:before {
+    content: "\f04a";
+}
+
+.slick-next: before {
+    content: "\f04e";
+}
+
+.about-site {
+    width: 80%;
+    margin: 1em auto;
+    line-height: 1.6;
+}
+
+.about-site ul {
+    width: 80%;
+    margin: 0.4em auto;
+    padding-bottom: 1em;
+}
+
+.about a, .about-site a {
+    color: #fff;
+    transition: color .4s;
+    text-decoration: underline;
+}
+
+
+.footer {
+    z-index: 99;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    padding: 0.4em 0;
+    letter-spacing: 4px;
+    background-color: rgba(0, 0, 0, 0.80);
+}

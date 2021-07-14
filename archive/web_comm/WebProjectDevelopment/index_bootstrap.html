@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title>Max Symuleski</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--bootstrap style-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!--my style-->
+        <link rel="stylesheet" href="style_bootstrap.css">
+        <style>
+            .title {
+                background: #2e2e2e;
+                color: #f8f8f8;
+                min-height: 100px;
+                padding: 1em 0;
+                text-align: center;
+                margin: 2em auto;
+                width: 80%;
+                border-radius: 16px;
+            }
+            
+            .navbar {
+                background-color: #000;
+                color: #fff;
+            }
+            
+            .nav-item {
+                
+            }
+            
+            .btn {
+              margin: 6px;  
+            }
+            
+            .scrollspy-example {
+                max-height: 400px;
+                overflow: scroll; 
+                max-width: 90%;
+                margin: 1em auto;
+                position: relative;
+            }
+            .scrollspy-example .navbar {
+                position: sticky;
+                top: 0px;
+            }
+        </style>
+        </head>
+        
+        <body>
+            <!--navbar fixed to the top-->
+            <nav class="navbar navbar-expand-sm fixed-top">
+              <a class="navbar-brand" href="http://people.duke.edu/~mjs97">Home</a>
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.w3schools.com/bootstrap4/bootstrap_navbar.asp">Bootstrap Nav Reference</a>
+                </li>
+                  <li class="nav-item">
+                  <a class="nav-link" href="https://www.w3schools.com/bootstrap4/bootstrap_grid_examples.asp">Bootstrap Grid Examples</a>
+                  </li>
+                  <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Other Handy Resources
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="https://uxplanet.org/how-to-customize-bootstrap-b8078a011203">Ux Planet: Customizing Boostrap</a>
+                    <a class="dropdown-item" href="https://bootstrapbay.com/blog/customize-bootstrap/">Customizing bootstrap right</a>
+                    <a class="dropdown-item" href="https://www.w3schools.com/bootstrap4/">W3 Schools Bootstrap 4 Tut.</a>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+            <div class="container-fluid" style="margin-top:80px;">
+                <div class="title"><h1>Bootstrap Examples</h1></div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                <!--dropdown example-->
+                <div class="example">
+                    <p>This is a simple dropdown menu.</p>
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                        Menu
+                        </button>
+                        <div class="dropdown-menu">
+                        <a class="dropdown-item" href="https://www.w3schools.com/bootstrap4/bootstrap_dropdowns.asp">Bootstrap Dropdowns</a>
+                        <a class="dropdown-item" href="#">Link 2</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                        </div>
+                    </div>
+                    <p style="margin-top: 20px">Bootstrap also has lots of buttons.  You can use classes like 'btn-primary' and 'btn-warning' for different colors.</p>
+                    <button type="button" class="btn">Basic</button>
+                    <button type="button" class="btn btn-primary">Primary</button>
+                    <button type="button" class="btn btn-secondary">Secondary</button>
+                    <button type="button" class="btn btn-success">Success</button>
+                    <button type="button" class="btn btn-info">Info</button>
+                    <button type="button" class="btn btn-warning">Warning</button>
+                    <button type="button" class="btn btn-danger">Danger</button>
+                    <button type="button" class="btn btn-dark">Dark</button>
+                    <button type="button" class="btn btn-light">Light</button>
+                    <button type="button" class="btn btn-link">Link</button>
+                </div><!--example-->
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="example">
+                    <h2>Media Object</h2>
+                    <p>Create a media object with the .media and .media-body classes:</p>
+                      <div class="media border border-success p-3">
+                        <img src="images/user_avatar.png" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:60px;">
+                        <div class="media-body">
+                          <p>Here's some text that sits next to an image.  I can use the 'media' class, with this text nested in side in a 'media-body' class.  Here I am also using class mixins to define properties like border, padding,, right and top margins.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>      
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                </div><!--row-->
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="example">
+                            <h2>responsive images</h2>
+                            <!--with images, we can get add classes for styling and responsiveness:  https://www.w3schools.com/bootstrap4/bootstrap_images.asp-->
+                            <img src="images/kitten.jpg" class="img-fluid img-thumbnail" style="float:left;margin:10px;width:200px;height:auto;">
+                        <p>Classes like img-fluid can help with sizing images, and img-thumbnail for styling.  You can also add rounded corners, etc. I used "float:left" to get this text to wrap around the image. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        
+                        </div><!--example-->
+                    </div>
+                    <div class="col-lg-6">
+                    <div class="example">
+                        <h2>A "card"</h2>
+                        <div class="card" style="width:90%;margin:auto;">
+                      <img class="card-img-top" src="images/kitten.jpg" alt="Card image">
+                      <div class="card-img-overlay">
+                        <h4 class="card-title">KITTEN!</h4>
+                        <p class="card-text">There are also elements like "cards" and others that add some styling.  This card example lets text overlay images.</p>
+                        <a href="https://www.w3schools.com/bootstrap4/bootstrap_cards.asp" class="btn btn-primary">More about cards</a>
+                      </div><!--card-img-overlay-->
+                    </div><!--card-->
+                       <p style="margin-top:20px;">There are tons of elements in bootstrap that are designed for web-standard communication forms (blogs, profiles, Wikis, etc.). You can utilize the functionality of these, and change the styling, for your own design.</p> 
+                    </div>
+                    </div>
+                </div><!--row-->
+                <div class="row">
+                <div class="col-lg-6">
+                    <div class="example">
+                        <p style="margin:10px 8px;">One of my favorite bootstrap utilities is "collapse", which lets you tie hide/show content to buttons and accordion menus very easily.</p>
+                        <a href="https://www.w3schools.com/bootstrap4/bootstrap_collapse.asp" class="btn btn-dark">More about Collapse</a>
+                        <h2>Simple Collapsible</h2>
+                        <a href="#demo" class="btn btn-primary" data-toggle="collapse">Simple collapsible</a>
+                        <div id="demo" class="collapse">
+                        the href of the button is "#demo", and the id of the collapsable content is "demo"; the data-toggle attribute is set to "collapse".
+                      </div>
+                    
+                    
+                    </div><!--example-->
+                  
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="example">
+                        <p style="margin:10px 8px;">
+                        You can also make a whole accordion menu!
+                        </p>
+                        <h2>Accordion</h2>
+                          <p><strong>Note:</strong> The <strong>data-parent</strong> attribute makes sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.</p>
+                          <div id="accordion">
+                            <div class="card">
+                              <div class="card-header">
+                                <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                                  Collapsible Group Item #1
+                                </a>
+                              </div>
+                              <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                                <div class="card-body">
+                                  this one has the class "show" and so it will be showing when the page loads.  Take this class off, or add it to a different div in the menu to see this in action.  
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-header">
+                                <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                                Collapsible Group Item #2
+                              </a>
+                              </div>
+                              <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                  pay close attention as well to the data-parent, data-toggle and id attributes.  The ids are linked to the hrefs of each Item heading.  The data-parent and data-toggle attributes work with the underlying bootstrap javascript to help these elements open and close.  Each of the collapse bodies must have the data-parent accordion, and the data-toggle "collapse" in order to work.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-header">
+                                <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                                  Collapsible Group Item #3
+                                </a>
+                              </div>
+                              <div id="collapseThree" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                  Try removing the class "collapsed" from the a link above, and adding the class "show" to this div (#collapseThree)
+                                </div>
+                              </div>
+                            </div>
+                          </div><!--accordion-->
+                        </div><!--example-->
+                    </div><!--col-->
+                </div><!--row-->
+            <div class="row">
+                <div class="col-lg-12">
+                <div class="example">
+                <h2>Toggleable Tabs (all content on same page)</h2>
+                  <br>
+                <!-- Nav tabs , can also switch for nav-pills and change the data-toggle to "pill", and add classes like nav-justify to spread the content out-->
+                  <ul class="nav nav-tabs nav-justified" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" data-toggle="tab" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-toggle="tab" href="#menu1">Menu 1</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-toggle="tab" href="#menu2">Menu 2</a>
+                    </li>
+                  </ul>
+               
+            <!-- Tab panes -->
+                <div class="tab-content">
+                <div id="home" class="container tab-pane active"><br>
+                    <h3>HOME</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                <div id="menu1" class="container tab-pane fade"><br>
+                  <h3>Menu 1</h3>
+                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div id="menu2" class="container tab-pane fade"><br>
+                  <h3>Menu 2</h3>
+                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                </div>
+                </div><!--.tab-content-->
+                    
+            </div><!--example-->
+            </div><!--col-12-->
+        </div><!--.row-->
+                
+                <div class="row">
+                <div class="col-lg-8"></div>
+                <div class="scrollspy-example" data-spy="scroll" data-target=".navbar" data-offset="50">
+                    <nav  id= "mynav" class="navbar navbar-expand-sm bg-dark navbar-dark">  
+                      <ul class="navbar-nav">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#section1">Section 1</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#section2">Section 2</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#section3">Section 3</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            Section 4
+                          </a>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#section41">Link 1</a>
+                            <a class="dropdown-item" href="#section42">Link 2</a>
+                          </div>
+                        </li>
+                      </ul>
+                    </nav><!--.nav-->
+
+                    <div id="section1" class="container-fluid bg-success" style="padding-top:70px;padding-bottom:70px">
+                      <h1>Section 1</h1>
+                      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+                      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+                    </div>
+                    <div id="section2" class="container-fluid bg-warning" style="padding-top:70px;padding-bottom:70px">
+                      <h1>Section 2</h1>
+                      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+                      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+                    </div>
+                    <div id="section3" class="container-fluid bg-secondary" style="padding-top:70px;padding-bottom:70px">
+                      <h1>Section 3</h1>
+                      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+                      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+                    </div>
+                    <div id="section41" class="container-fluid bg-danger" style="padding-top:70px;padding-bottom:70px">
+                      <h1>Section 4 Submenu 1</h1>
+                      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+                      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+                    </div>
+                    <div id="section42" class="container-fluid bg-info" style="padding-top:70px;padding-bottom:70px">
+                      <h1>Section 4 Submenu 2</h1>
+                      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+                      <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+                    </div>
+                    
+                    
+                    </div>
+                
+                </div>
+    </div><!--container-fluid-->
+            
+            
+            
+            
+        <!--jQuery-->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <!--Popper js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <!--bootstrap-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+            
+        </body>
+</html>
